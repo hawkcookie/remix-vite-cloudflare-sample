@@ -2,8 +2,8 @@ import { inngest } from "./client";
 
 export const hoge = () => {
   return inngest.createFunction(
-    { id: "activation-email" },
-    { event: "app/user.created" },
+    { id: "hoge" },
+    { event: "app/user.hoge" },
     async ({ event, step }) => {
       // Send the user a welcome email
       await step.run("send-welcome-email", () => {
@@ -34,8 +34,8 @@ export const hoge = () => {
 
 export const fuga = () => {
   return inngest.createFunction(
-    { id: "activation-email" },
-    { event: "app/user.created" },
+    { id: "activationfuga" },
+    { event: "app/user.fuga" },
     async ({ event, step }) => {
       // Send the user a welcome email
       await step.run("send-welcome-email", () => {
@@ -66,8 +66,8 @@ export const fuga = () => {
 
 export const piyo = () => {
   return inngest.createFunction(
-    { id: "activation-email" },
-    { event: "app/user.created" },
+    { id: "activation-piyo" },
+    { event: "app/user.piyo" },
     async ({ event, step }) => {
       // Send the user a welcome email
       await step.run("send-welcome-email", () => {
