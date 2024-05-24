@@ -5,7 +5,7 @@ import {hoge, fuga, piyo} from "~/inngest/sample";
 
 const handler = serve({
   client: inngest,
-  functions: [hoge, fuga, piyo],
+  functions: [hoge(), fuga(), piyo()],
 });
 
 export { handler as action, handler as loader };
